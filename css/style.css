@@ -1,3 +1,11 @@
+/* --------------------------variables------------------------------ */
+:root{
+    --negro: #000000;
+    --blanco: #ffffff;
+    --naranja: rgb(245, 175, 35);
+}
+
+
 *{
     margin:0;
     padding: 0;
@@ -5,7 +13,7 @@
 }
 
 .navbar{
-    background-color: black;
+    background-color: var(--negro);
     color: white;
     font-size: 20px;
     position: fixed;
@@ -22,12 +30,12 @@
 }
 
 .navbar a{
-    color: white;
+    color: var(--blanco);
     text-decoration: none;
 }
 
 .navbar a:hover{
-    color: rgb(245, 175, 35);
+    color: var(--naranja);
 }
 
 .menu{
