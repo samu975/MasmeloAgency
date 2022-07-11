@@ -28,6 +28,7 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 3;
 }
 
 .logo{
@@ -55,14 +56,18 @@
   margin-top: 30%;
   width: 30%;
 }
+.noCardArea--text{
+  color: rgb(160, 154, 154);
+}
 .noCardArea--title__orange{
     color: var(--naranja);
 }
 
+
 /* ------------------------------------- card section -----------------------------------------  */
 /* Main heading for card's front cover */
 .card-front__heading {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: .25rem;
     text-align: center;
   }
@@ -76,7 +81,7 @@
   /* For both inside page's main heading and 'view me' text on card front cover */
   .inside-page__heading,
   .card-front__text-view {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 800;
     margin-top: .2rem;
   }
@@ -100,6 +105,8 @@
   /* For inside page's body text */
   .inside-page__text {
     color: #333;
+    font-size: 0.8rem;
+    margin-bottom: 15%;
   }
   
 
@@ -110,7 +117,7 @@
     background-color: transparent;
     border: 3px solid;
     border-radius: .5rem;
-    font-size: 1rem;
+    font-size: .7rem;
     font-weight: 800;
     margin-top: -1rem;
     overflow: hidden;
@@ -202,7 +209,7 @@
   }
   
   /* A container to hold the flip card and the inside page */
-  .card {
+  .card__animated {
     background-color: rgba(0,0,0, .05);
     box-shadow: -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.5);
     height: 15rem;
@@ -222,7 +229,7 @@
     transition: all 1s ease;
     visibility: hidden;
     width: 15rem;
-    z-index: 100;
+    z-index: 2;
   }
   
   /* The outer container's visibility is set to hidden. This is to make everything within the container NOT set to hidden  */
@@ -351,19 +358,19 @@
   /* Functionality ====================================*/
   
   /* This is to keep the card centered (within its container) when opened */
-  .card:hover {
+  .card__animated:hover {
     box-shadow:
     -.1rem 1.7rem 6.6rem -3.2rem rgba(0,0,0,0.75);
     width: 30rem;
   }
   
   /* When the card is hovered, the flip card container will rotate */
-  .card:hover .flip-card__container {
+  .card__animated:hover .flip-card__container {
     transform: rotateY(-180deg);
   }
   
   /* When the card is hovered, the shadow on the inside page will shrink to the left */
-  .card:hover .inside-page {
+  .card__animated:hover .inside-page {
     box-shadow: inset 1rem 0px 5rem -2.5rem rgba(0,0,0,0.1);
   }
 /* ------------------------------------- fin card section -----------------------------------------  */
@@ -372,11 +379,22 @@
 
 
 /* ------------------------------------------------------media queries ------------------------------ */
-@media (min-width: 768px) {
-    h2{
-        font-size: 3rem;
-    }
-    p{
-        font-size: 1rem;
-    }
- }
+@media (max-width: 992px) {
+  .noCardArea--imagen__logo{
+    margin-top: 50px;
+    width: 100%;
+  }
+  .card-area{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .noCardArea--text{
+    padding: 0!important;
+    margin: 0!important;
+    font-size: 15px!important;
+  }
+  .imagen__container{
+    display: none;
+  }
+  
+}
