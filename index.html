@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
     <title>Masmelo Agency</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -14,39 +15,221 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
+    <!-- ------------------------------------ Header -----------------------------------  -->
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Masmelo Agency
-            <img class="logo" src="src/img/logo.jpg" alt="">
-           
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#menu"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class=" nav-icon navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="menu">
+        <nav class="navbar d-flex container-fluid navbar-expand-md navbar-dark bg-dark">
+        <div class=" float-start justify-content-start gap-4 mx-3 container-fluid">
+          <img class="logo" src="src/img/logo.png" alt="">
+          <h1 class="navbar-brand fs-2" href="#">Masmelo Agency</h1>
+            <button
+              class="navbar-toggler float-end"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#menu"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=" nav-icon navbar-toggler-icon"></span>
+            </button>
+        </div>
+          <div class="collapse navbar-collapse me-5" id="menu">
             <ul class="nav-list navbar-nav me-auto">
                 <li class="nav-item list-item"><a class="nav-link" href="#">Inicio</a></li>
-                <li class="nav-item list-item"><a class="nav-link" href="#">Acerca de</a></li>
-                <li class="nav-item list-item"><a class="nav-link" href="#">Servicios</a></li>
+                <li class="nav-item list-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item list-item"><a class="nav-link" href="#">Portafolio</a></li>
                 <li class="nav-item list-item"><a class="nav-link" href="#">Contactanos</a></li>
             </ul>
-           
           </div>
-        </div>
+        
       </nav>
     </header>
+    <!-- ------------------------------------ Fin del Header -----------------------------------  -->
+
+    <!-- ------------------------------------ Main -----------------------------------  -->
+
+    <main class="main">
+      <section class="noCardArea d-flex align-items-center justify-content-center p-5 flex-wrap">
+        <div class="noCardArea--imagen noCardArea--right ">
+          <img class="noCardArea--imagen__logo " src="./src/img/logo.png" alt="">
+        </div>
+        <div class="noCardArea--title noCardArea--left"><h2 class=" mb-5  fs-1">Tu tambien puedes <span class="noCardArea--title__orange">#SerMasmelo</span></h2></div>
+        <div class="noCardArea--container noCardArea--left"><p class=" noCardArea--text p-5 mx-5 fs-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet mollitia, necessitatibus enim sit iure voluptate tempore? Soluta sint repudiandae autem at sed inventore accusantium velit eligendi! Magnam explicabo pariatur voluptatem.
+        Exercitationem tempore dignissimos porro, repudiandae, quam excepturi commodi nobis modi, distinctio fugit architecto obcaecati dicta rerum vero similique? Exercitationem corporis quisquam quaerat libero tempora. Dicta laborum fuga vero ab libero!</p></div>
+      </section>
+
+<!-- ----------------------------------- Animacion con las cards -------------------------------------------- -->
+   
+      
+      <section class="card-area d-flex ">
+
+        <!-- Card: marketing -->
+        <section class="card-section ">
+            <div class="card__animated">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--marketing">
+                           <h2 class="card-front__heading">
+                            Marketing
+                        </h2>
+                        
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--marketing">
+                                    Ver más
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="imagen__container" src="./src/img/img1.jpg">
+                    
+                            </img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--marketing">
+                            Marketing
+                        </h3>
+                        <p class="inside-page__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus distinctio labore 
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--marketing">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: trafico organico -->
+        <section class="card-section">
+            <div class="card__animated">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--to">
+                               
+                                           <h2 class="card-front__heading">
+                                            Tráfico orgánico
+                                           </h2>
+                                           <p class="card-front__text-price">
+                                               
+                                           </p>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--to">
+                                    Ver más
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card-back">
+                            <img class="imagen__container" src="./src/img/img2.jpg"></img>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--to">
+                          Tráfico orgánico
+                        </h3>
+                        <p class="inside-page__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quisquam ratione quis recusandae!
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--to">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: posicionamiento -->
+        <section class="card-section">
+            <div class="card__animated">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--posicionamiento">
+                                           <h2 class="card-front__heading">
+                                               Posicionamiento de marca
+                                           </h2>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--posicionamiento">
+                                  Ver más
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="imagen__container" src="./src/img/img3.jpg" alt="imagen generica de marketing">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--posicionamiento">
+                            Posicionamiento de marca
+                        </h3>
+                        <p class="inside-page__text">
+                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--posicionamiento">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Card: metricas -->
+        <section class="card-section">
+            <div class="card__animated">
+                <div class="flip-card">
+                    <div class="flip-card__container">
+                        <div class="card-front">
+                            <div class="card-front__tp card-front__tp--metricas">
+                                           <h2 class="card-front__heading">
+                                            Métricas
+                                           </h2>
+                            </div>
+
+                            <div class="card-front__bt">
+                                <p class="card-front__text-view card-front__text-view--metricas">
+                                    Ver más
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <img class="imagen__container" src="./src/img/img4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inside-page">
+                    <div class="inside-page__container">
+                        <h3 class="inside-page__heading inside-page__heading--metricas">
+                            Métricas
+                        </h3>
+                        <p class="inside-page__text">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt iste vitae
+                        </p>
+                        <a href="#" class="inside-page__btn inside-page__btn--metricas">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- ----------------------------------- Fin Animacion con las cards -------------------------------------------- -->
+    </main>
+
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
