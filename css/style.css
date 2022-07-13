@@ -379,6 +379,29 @@
 /* ------------------------------------- fin card section -----------------------------------------  */
 
 /* -------------------------------------------------- Fin Main -------------------------------------------------------  */
+/* -----------------------------------inicio footer ------------------------------------------------------------------------ */
+
+.footer{
+  background: linear-gradient(23deg, #212429 50%, #fff 50%);
+}
+.aside--footer__left{
+  flex-grow: 1;
+  text-align: center;
+}
+.aside--footer__right{
+  flex-grow: 1;
+}
+.icons__pushRight{
+  display: flex;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+.aside--footer__text{
+  color: white;
+  margin: 0;
+}
 
 
 /* ------------------------------------------------------media queries ------------------------------ */
