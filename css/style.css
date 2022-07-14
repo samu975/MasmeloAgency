@@ -10,69 +10,76 @@
     
 }
 /* ------------------------------- fin variables ---------------------------- */
+
+
 *{
-  margin:0;   
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Open Sans', sans-serif;
+    margin:0;   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 /* --------------------------Header----------------------------- */
+
 .header{
-  background-color: black;
-  color: var(--blanco);
-  text-align: center;
+    background-color: black;
+    color: var(--blanco);
+    text-align: center;
 }
 .cel{
-  text-decoration: none;
-  color: var(--blanco);
+    text-decoration: none;
+    color: var(--blanco);
 }
 
 .cel:hover{
-  color: var(--naranja);
+    color: var(--naranja);
 }
 /* --------------------------Fin header----------------------------- */
 
 /* --------------------------Nav----------------------------- */
 .contenedor{
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  overflow: hidden;
-  padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
 }
 
 .menu-navegacion{
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
 }
 
 .logo{
-  padding: 0;
-  height: 65px;
-  
+    padding: 0;
+    height: 65px;
+    
 }
 
 .logo img{
-  display: block;
-  height: 100%;
+    display: block;
+    height: 100%;
 }
 
 .enlaces li{
-  list-style: none;
-  display: inline-block;
+    list-style: none;
+    display: inline-block;
 }
 
 .enlaces a{
-  text-decoration: none;
-  color: black;
-  padding-left: 20px;
-  font-size: 20px;
+    text-decoration: none;
+    color: black;
+    padding-left: 20px;
+    font-size: 20px;
 }
 
 .enlaces a:hover{
-  color: var(--naranja);
+    color: var(--naranja);
+}
+.header{
+    padding: 10px;
 }
 /* --------------------------Nav----------------------------- */
+/* -------------------------------------------------- Main -------------------------------------------------------  */

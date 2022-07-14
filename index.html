@@ -6,12 +6,13 @@
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
     <title>Masmelo Agency</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/sass/output.css">
   </head>
   <body>
  <!-- ------------------------------------ Header -----------------------------------  -->
     <header class="header">
 
-        <span>Contactanos: </span>
+        <span class="contactanos">Contáctanos: </span>
         <a
           class="cel"
           href="https://api.whatsapp.com/send?phone=573174012157&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20Masmelo%20%F0%9F%98%8E"
@@ -31,9 +32,40 @@
             <li ><a href="#">Contactanos</a></li>
         </ul>
         </div>
-         
       </nav>
 <!-- ------------------------------------ Fin del Header -----------------------------------  -->
-   
+<!-- ------------------------------------ inicio del body--------------------- -->
+<main>
+    <section class="slider--index">
+        <div class="slider--index__container container--index" >
+            <img class="slider--index__arrow" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before">
+            <section class="slider--index__body slider--index__body__show" data-id="1">
+                <figure>
+                    <img class="slider--index__img" src="./src/img/banner/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg" alt="" >
+                </figure>
+            </section>
+            <section class="slider--index__body" data-id="2">
+                <figure>
+                    <img class="slider--index__img" src="./src/img/banner/retrosupply-jLwVAUtLOAQ-unsplash.jpg" alt="" >
+                </figure>
+            </section>
+            <section class="slider--index__body" data-id="3">
+                <figure>
+                    <img class="slider--index__img" src="./src/img/banner/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg" alt="" >
+                </figure>
+            </section>
+            <section class="slider--index__body" data-id="4">
+                <figure>
+                    <img class="slider--index__img" src="./src/img/banner/daniele-franchi-GbAEJUJKJ88-unsplash.jpg" alt="" >
+                </figure>
+            </section>
+            
+                <img class="slider--index__arrow" src="./src/img/iconos/bx-right-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--next">
+            
+        </div>
+    </section>
+</main>
+<!-- ----------------------------------- fin del body ----------------------------------- -->
+   <script src="./js/slider.js"></script>
   </body>
 </html>
