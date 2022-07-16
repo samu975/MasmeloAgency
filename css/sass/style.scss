@@ -115,6 +115,64 @@ body{
         border-bottom-right-radius: 2.5rem;
     }
 }
+// ---------------------- Se más section ------------------------------------
+.index--contenedor-text{
+    display: flex;
+    justify-content: center;
+    margin: 8vw 0;
+    text-align: center;
+    .index--seMas__title{
+        font-size: 9vw;
+    }
+    .animacion--mas{
+        font-size: 9vw;
+        font-weight: bold;
+        color: $naranja;
+    }
+    .typed-cursor{
+        font-size: 6vh;
+    }
+}
+
+  
+//   -------------------------- if you r -----------
+.if-you-are{
+    background-color: #ECE9E4;
+    width: 100%;
+    padding: 30px;
+}
+
+.text-if-you{
+    text-align: center;
+    color: #A3654D
+}
+
+.check-icon{
+    width: 7vw;
+}
+.list-if-you{
+    list-style: none;
+    color: #2D4B57;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.text-or{
+    text-align: center;
+    color: #4B4A4A;
+    font-weight: bold;
+    font-size: 15px;
+}
+.text-right-place{
+    text-align: center;
+    color: #A3654D;
+    font-weight: bold;
+    font-size: 35px;
+}
+  
+
+
 
 /* -------------------------media queries ---------------------------------- */
 
@@ -150,5 +208,28 @@ body{
     .slider--index{
         margin-top: 4rem;
     }
-    
+    .check-icon{
+        width: 2vw;
+    }
+    .index--contenedor-text{
+        margin-top: 15px;
+        margin-bottom: 50px;
+        .index--seMas__title{
+            font-size: 3vw;
+        }
+        .animacion--mas{
+            font-size: 3vw;
+            font-weight: bold;
+            color: $naranja;
+        }
+        .typed-cursor{
+            font-size: 7vh;
+        }
+    }
+    .if-you-are{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
 }
