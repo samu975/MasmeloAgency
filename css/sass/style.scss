@@ -2,6 +2,10 @@ $negro: rgb(33, 36, 41);
 $naranja:rgb(245, 175, 35);
 $blanco:#ffffff;
 
+// .sr{
+//     visibility: hidden;
+// }
+
 body{
     background-color: #f2f2f2;
 }
@@ -62,11 +66,12 @@ body{
         li{
             list-style: none;
             a{
-                font-size: 3vw;
+                font-size: 3.5vw;
                 margin: 1rem;
                 letter-spacing: 1px;
                 text-decoration: none;
                 color: $negro;
+                font-weight: bold;
             }
             a:hover{
                 color: $naranja;

@@ -49,11 +49,12 @@ body {
   .menu-navegacion ul li {
     list-style: none; }
     .menu-navegacion ul li a {
-      font-size: 3vw;
+      font-size: 3.5vw;
       margin: 1rem;
       letter-spacing: 1px;
       text-decoration: none;
-      color: #212429; }
+      color: #212429;
+      font-weight: bold; }
     .menu-navegacion ul li a:hover {
       color: #f5af23; }
   .menu-navegacion .navbar--logo__center {
