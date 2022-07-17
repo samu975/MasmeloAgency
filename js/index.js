@@ -10,7 +10,7 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'bottom',
         distance: '300px',
-        delay: 3000
+        delay: 1000
     });
 
    

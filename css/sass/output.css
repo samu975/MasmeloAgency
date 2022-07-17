@@ -108,6 +108,10 @@ body {
   .index--contenedor-text .typed-cursor {
     font-size: 6vh; }
 
+.index--if-you-are-container {
+  display: flex;
+  justify-content: center; }
+
 .if-you-are {
   background-color: #ECE9E4;
   width: 100%;
@@ -139,6 +143,35 @@ body {
   font-weight: bold;
   font-size: 35px; }
 
+.index-button-container {
+  display: flex;
+  justify-content: center; }
+
+.index--button-nosotros {
+  position: relative;
+  padding: 0 10px;
+  margin: 15px;
+  background-color: #A3654D;
+  line-height: 60px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: black;
+  transition: 0.5s;
+  border: 1px solid burlywood; }
+  .index--button-nosotros:hover {
+    border: 1px solid transparent;
+    background: url(https://i.postimg.cc/wBXGXbWN/pixel.png);
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards; }
+
+@keyframes animate {
+  0% {
+    background-position-y: 0; }
+  100% {
+    background-position-y: -480px; } }
 /* -------------------------media queries ---------------------------------- */
 @media (min-width: 768px) {
   .header--contactanos {
