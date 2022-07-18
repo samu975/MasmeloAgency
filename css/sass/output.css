@@ -217,6 +217,10 @@ body {
     .index--franja-clientes .franja-clientes-body__container h5 {
       text-align: center; }
 
+footer {
+  text-align: center;
+  margin: 40px; }
+
 /* -------------------------media queries ---------------------------------- */
 @media (min-width: 768px) {
   .header--contactanos {

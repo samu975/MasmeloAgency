@@ -21,9 +21,10 @@ window.sr = ScrollReveal();
         distance: '200px',
     });
     sr.reveal('.index--franja-clientes', {
-        duration: 3000,
+        duration: 2000,
         origin: 'right',
         distance: '200px',
+        opacity: 1
     });
     
 
