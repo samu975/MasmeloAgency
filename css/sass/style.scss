@@ -50,7 +50,7 @@ body{
         .slider--index__arrow:nth-child(1){
             justify-self: end;
         }
-        
+
     }
 }
 .menu-navegacion{
@@ -105,7 +105,7 @@ body{
         background-color: white;
         border: 1px solid white;
         border-bottom-left-radius: 2.5rem;
-        
+
     }
     .navbar--enlaces__right{
         grid-column: 3/4;
@@ -139,7 +139,7 @@ body{
     }
 }
 
-  
+
 //   -------------------------- if you r -----------
 .index--if-you-are-container{
     display: flex;
@@ -149,6 +149,7 @@ body{
     background-color: #ECE9E4;
     width: 100%;
     padding: 30px;
+    margin-bottom: 0;
 }
 
 .text-if-you{
@@ -185,6 +186,7 @@ body{
 }
 
 .index--button-nosotros{
+    border-radius: 12px;
     position: relative;
     padding: 0 10px;
     margin: 15px;
@@ -213,8 +215,60 @@ body{
       background-position-y: -480px;
     }
   }
+.index--categorias-clientes{
+    background-color: rgb(255, 212, 178);
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.index--categorias-clientes__titulo{
+    font-size: 5.5vw;
+    margin: 0 20px;
+    padding: 8vh 0 ;
+    text-align: center;
+    color: rgb(141, 48, 30);
+}
+.index--categories-clientes__image-container{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 7px 6px 7px 4px rgba(0,0,0,0.37);
+    box-shadow: 0px 10px 13px -7px #000000, 7px 6px 7px 4px rgba(0,0,0,0.37);
+    margin: 5% auto;
+    width: 70vw;
+    height: 50vh;
+    background-color: #2D4B57;
 
-  
+    .index--categories-clientes__image{
+
+    }
+}
+#index-button__clientes{
+    width: 164px;
+}
+.index--franja-clientes{
+    padding-top: 20px;
+    h2{
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+    .franja-clientes-body__container{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        p{
+            margin: 0px 10px 10px 10px;
+            padding: 0 5px;
+            text-align: justify;
+        }
+        h4{
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+        }
+    }
+}
+
+
 
 
 
@@ -224,7 +278,7 @@ body{
     .header--contactanos{
         font-size: 1.2rem;
     }
-    
+
     .header--celular{
         font-size: 1.2rem;
         color: #ffffff;
@@ -242,10 +296,10 @@ body{
             height: 6rem;
             border-bottom-left-radius: 40px ;
             border-bottom-right-radius: 40px ;
-            
+
         }
     }
-    
+
     .navbar--enlaces__text{
         font-size: 1.2vw!important;
     }
@@ -275,5 +329,30 @@ body{
         flex-direction: column;
         align-items: center;
         flex-wrap: nowrap;
+    }
+    .index--categorias-clientes__titulo{
+        font-size: 2vw;
+    }
+    .index--categories-clientes__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .index--categories-clientes__image-container{
+
+        width: 15vw;
+        margin: 0 0 30px 0;
+        height: 20vh;
+        background-color: #2D4B57;
+
+        .index--categories-clientes__image{
+
+        }
+    }
+    .index--franja-clientes{
+        margin: 0 auto;
+        .franja-clientes-body__container{
+            margin: 0 auto;
+            width: 70%;
+        }
     }
 }

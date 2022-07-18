@@ -4,13 +4,27 @@ window.sr = ScrollReveal();
         duration: 3000,
         origin: 'left',
         distance: '-100px',
-        delay: 1000
     });
     sr.reveal('.if-you-are', {
         duration: 3000,
         origin: 'bottom',
         distance: '300px',
-        delay: 1000
     });
+    sr.reveal('.index--categorias-clientes', {
+        duration: 3000,
+        origin: 'left',
+        distance: '-300px',
+    });
+    sr.reveal('.index--categories-clientes__image-container', {
+        duration: 3000,
+        origin: 'bottom',
+        distance: '200px',
+    });
+    sr.reveal('.index--franja-clientes', {
+        duration: 3000,
+        origin: 'right',
+        distance: '200px',
+    });
+    
 
-   
+    
