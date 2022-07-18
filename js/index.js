@@ -15,6 +15,11 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '-300px',
     });
+    sr.reveal('.franja', {
+        duration: 3000,
+        origin: 'right',
+        distance: '-300px',
+    });
     sr.reveal('.index--categories-clientes__image-container', {
         duration: 3000,
         origin: 'bottom',
@@ -25,6 +30,13 @@ window.sr = ScrollReveal();
         origin: 'right',
         distance: '200px',
     });
+    sr.reveal('.index--servicios__container', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+    });
+    
+    
     
 
     
