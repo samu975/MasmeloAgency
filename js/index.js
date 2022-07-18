@@ -24,7 +24,6 @@ window.sr = ScrollReveal();
         duration: 2000,
         origin: 'right',
         distance: '200px',
-        opacity: 1
     });
     
 
