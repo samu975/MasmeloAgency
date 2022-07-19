@@ -325,6 +325,7 @@ footer{
     display: grid;
     place-items: center;
     overflow: hidden;
+    justify-items: flex-end;
 }
 
 .slide-track{
@@ -358,6 +359,7 @@ footer{
 .slide img{
     width: 100%;
     transition: transform 1s;
+    gap: 15px;
 }
 .slide:hover img{
     transform: translateZ(20px);
