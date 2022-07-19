@@ -2,8 +2,13 @@ $negro: rgb(33, 36, 41);
 $naranja:rgb(245, 175, 35);
 $blanco:#ffffff;
 
+// .sr{
+//     visibility: hidden;
+// }
+
 body{
     background-color: #f2f2f2;
+    overflow-x: hidden;
 }
 .container--index{
     width: 90%;
@@ -46,7 +51,7 @@ body{
         .slider--index__arrow:nth-child(1){
             justify-self: end;
         }
-        
+
     }
 }
 .menu-navegacion{
@@ -62,11 +67,12 @@ body{
         li{
             list-style: none;
             a{
-                font-size: 0.7rem;
+                font-size: 3.5vw;
                 margin: 1rem;
                 letter-spacing: 1px;
                 text-decoration: none;
                 color: $negro;
+                font-weight: bold;
             }
             a:hover{
                 color: $naranja;
@@ -100,7 +106,7 @@ body{
         background-color: white;
         border: 1px solid white;
         border-bottom-left-radius: 2.5rem;
-        
+
     }
     .navbar--enlaces__right{
         grid-column: 3/4;
@@ -115,6 +121,161 @@ body{
         border-bottom-right-radius: 2.5rem;
     }
 }
+// ---------------------- Se más section ------------------------------------
+.index--contenedor-text{
+    display: flex;
+    justify-content: center;
+    margin: 8vw 0;
+    text-align: center;
+    .index--seMas__title{
+        font-size: 9vw;
+    }
+    .animacion--mas{
+        font-size: 9vw;
+        font-weight: bold;
+        color: $naranja;
+    }
+    .typed-cursor{
+        font-size: 6vh;
+    }
+}
+
+
+//   -------------------------- if you r -----------
+.index--if-you-are-container{
+    display: flex;
+    justify-content: center;
+}
+.if-you-are{
+    background-color: #ECE9E4;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 0;
+}
+
+.text-if-you{
+    text-align: center;
+    color: #A3654D
+}
+
+.check-icon{
+    width: 7vw;
+}
+.list-if-you{
+    list-style: none;
+    color: #2D4B57;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.text-or{
+    text-align: center;
+    color: #4B4A4A;
+    font-weight: bold;
+    font-size: 15px;
+}
+.text-right-place{
+    text-align: center;
+    color: #A3654D;
+    font-weight: bold;
+    font-size: 35px;
+}
+.index-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.index--button-nosotros{
+    border-radius: 12px;
+    position: relative;
+    padding: 0 10px;
+    margin: 15px;
+    background-color: #A3654D;
+    line-height: 60px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    transition: 0.5s;
+    border: 1px solid burlywood;
+    &:hover {
+      border: 1px solid transparent;
+      background: url(https://i.postimg.cc/wBXGXbWN/pixel.png); // 360px x 1080px
+      transition-delay: 0.8s;
+      background-size: 180px;
+      animation: animate 0.8s steps(8) forwards;
+    }
+  }
+  @keyframes animate {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }
+.index--categorias-clientes{
+    background-color: rgb(255, 212, 178);
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+.index--categorias-clientes__titulo{
+    font-size: 5.5vw;
+    margin: 0 20px;
+    padding: 8vh 0 ;
+    text-align: center;
+    color: rgb(141, 48, 30);
+}
+.index--categories-clientes__image-container{
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 7px 6px 7px 4px rgba(0,0,0,0.37);
+    box-shadow: 0px 10px 13px -7px #000000, 7px 6px 7px 4px rgba(0,0,0,0.37);
+    margin: 5% auto;
+    width: 70vw;
+    height: 50vh;
+    background-color: #2D4B57;
+
+    .index--categories-clientes__image{
+
+    }
+}
+#index-button__clientes{
+    width: 164px;
+}
+.index--franja-clientes{
+    padding-top: 20px;
+    h2{
+        text-align: center;
+        font-style: italic;
+        letter-spacing: 1px;
+    }
+    .franja-clientes-body__container{
+        padding: 5px;
+        margin: 5px;
+        display: flex;
+        justify-content: center;
+        p{
+            margin: 0px 10px 10px 10px;
+            padding: 0 5px;
+            text-align: justify;
+        }
+        h4{
+            text-align: center;
+        }
+        h5{
+            text-align: center;
+        }
+    }
+}
+footer{
+    text-align: center;
+    margin: 40px;
+}
+
+
+
+
 
 /* -------------------------media queries ---------------------------------- */
 
@@ -122,15 +283,81 @@ body{
     .header--contactanos{
         font-size: 1.2rem;
     }
-    
+
     .header--celular{
         font-size: 1.2rem;
         color: #ffffff;
     }
+    .menu-navegacion{
+        grid-template-columns: repeat(9, 1fr);
+        .navbar--enlaces__left{
+            grid-column: 3/5;
+        }
+        .navbar--enlaces__right{
+            grid-column: 6/8;
+        }
+        .navbar--logo__center{
+            grid-column: 5/6;
+            height: 6rem;
+            border-bottom-left-radius: 40px ;
+            border-bottom-right-radius: 40px ;
+
+        }
+    }
+
     .navbar--enlaces__text{
-        font-size: 1.2rem!important;
+        font-size: 1.2vw!important;
     }
     .slider--index{
         margin-top: 4rem;
+    }
+    .check-icon{
+        width: 2vw;
+    }
+    .index--contenedor-text{
+        margin-top: 15px;
+        margin-bottom: 50px;
+        .index--seMas__title{
+            font-size: 3vw;
+        }
+        .animacion--mas{
+            font-size: 3vw;
+            font-weight: bold;
+            color: $naranja;
+        }
+        .typed-cursor{
+            font-size: 7vh;
+        }
+    }
+    .if-you-are{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .index--categorias-clientes__titulo{
+        font-size: 2vw;
+    }
+    .index--categories-clientes__container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .index--categories-clientes__image-container{
+
+        width: 15vw;
+        margin: 0 0 30px 0;
+        height: 20vh;
+        background-color: #2D4B57;
+
+        .index--categories-clientes__image{
+
+        }
+    }
+    .index--franja-clientes{
+        margin: 0 auto;
+        .franja-clientes-body__container{
+            margin: 0 auto;
+            width: 70%;
+        }
     }
 }

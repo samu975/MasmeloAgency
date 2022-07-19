@@ -1,35 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="sr" lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
     <title>Masmelo Agency</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./css/sass/output.css">
+  
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+      <!--Iconos -->
+      <script src="https://kit.fontawesome.com/8ad2b1116a.js" crossorigin="anonymous"></script>
   </head>
   <body>
  <!-- ------------------------------------ Header -----------------------------------  -->
     <header class="header">
 
-        <span class="header--contactanos">Contáctanos: </span>
+        <span class="header--contactanos">De estandar a </span>
         <a
           class="header--celular"
           href="https://api.whatsapp.com/send?phone=573174012157&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20Masmelo%20%F0%9F%98%8E"
           target="_blank"
-          >3174012157</a >
+          >+Melo</a >
     </header>
   <!-- ------------------------------------ Nav -----------------------------------  -->
     <nav class="menu-navegacion contenedor">
-          
-    
             <ul class="navbar--enlaces__left" >
                 <li><a class="navbar--enlaces__text" href="#">Inicio</a></li>
-                <li><a class="navbar--enlaces__text" href="#">Acerca de</a></li>
+                <li><a class="navbar--enlaces__text" href="#">Nostros</a></li>
             </ul>
             <ul class="navbar--enlaces__right">
-                <li class="" ><a class="navbar--enlaces__text" href="#">Portafolio</a></li>
-                <li ><a class="navbar--enlaces__text" href="#">Contactanos</a></li>
+                <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
+                <li ><a class="navbar--enlaces__text" href="#">Contacto</a></li>
             </ul>
 
         </ul>
@@ -43,34 +47,159 @@
     <section class="slider--index">
         <div class="slider--index__container container--index" >
             <img class="slider--index__arrow" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before">
-            <section class="slider--index__body slider--index__body__show" data-id="1">
+            <div class="slider--index__body slider--index__body__show" data-id="1">
                 <figure>
                     <img class="slider--index__img" src="./src/img/banner/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg" alt="" >
                 </figure>
-            </section>
-            <section class="slider--index__body" data-id="2">
+            </div>
+            <div class="slider--index__body" data-id="2">
                 <figure>
                     <img class="slider--index__img" src="./src/img/banner/retrosupply-jLwVAUtLOAQ-unsplash.jpg" alt="" >
                 </figure>
-            </section>
-            <section class="slider--index__body" data-id="3">
+            </div>
+            <div class="slider--index__body" data-id="3">
                 <figure>
                     <img class="slider--index__img" src="./src/img/banner/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg" alt="" >
                 </figure>
-            </section>
-            <section class="slider--index__body" data-id="4">
+            </div>
+            <div class="slider--index__body" data-id="4">
                 <figure>
                     <img class="slider--index__img" src="./src/img/banner/daniele-franchi-GbAEJUJKJ88-unsplash.jpg" alt="" >
                 </figure>
-            </section>
+            </div>
             
                 <img class="slider--index__arrow" src="./src/img/iconos/bx-right-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--next">
             
         </div>
     </section>
+<!-- ----------------------------------- se más melo----------------------------- -->
+    <section class="index--seMas">
+        
+        <div class="index--contenedor-text">
+            <h2 class="index--seMas__title">Haz que tu marca sea + <span class="typed"> </span></h2>
+        </div>
+        
+    </section>
+
+<!-- ----------------------------------- if you are ------------
+-->
+<section class="index--if-you-are-container">
+    <div class="if-you-are">
+        <h2 class="text-if-you">Si tú eres</h2>
+        <ul>
+            <li class="list-if-you"> <img class="check-icon" src="src/img/iconos/check.svg" alt=""> side husder</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> emprendedor</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> coach</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Consultant</li>
+        </ul>
+
+        <p class="text-or">Or you just have a experience without a business yet</p>
+        <p class="text-right-place">Estás en el lugar correcto !</p>
+        <div class="index-button-container">
+            <a class="index--button-nosotros" href="./pages/nosotros.html">Quienes somos</a>
+        </div>
+    </div>
+    
+</section>
+<!-- -----------------------------------categoria clientes -->
+<section class="index--categorias-clientes">
+    <h2 class="index--categorias-clientes__titulo">Chismoseá lo que hemos hecho y con quienes hemos trabajado </h2>
+    <div class="index--categories-clientes__container">
+        <div class="index--categories-clientes__image-container"><img src="" alt="" class="index--categories-clientes__image" ></div>
+        <div class="index--categories-clientes__image-container"><img src="" alt="" class="index--categories-clientes__image" ></div>
+        <div class="index--categories-clientes__image-container"><img src="" alt="" class="index--categories-clientes__image" ></div>    
+    </div>
+    <div class="index-button-container">
+        <a id="index-button__clientes" class="index--button-nosotros" href="./pages/nosotros.html">Ver más</a>
+    </div>
+</section>
+<!-- ----------------------------------- franja clientes -->
+<section class="index--franja-clientes">
+    <h2>Qué dicen nuestro clientes: </h2>
+    <div class="franja-clientes-body__container">
+        <img class="slider--index__arrow-clientes" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before-clientes">
+        <div class="slider--index__caarrousel-container">
+
+            <div class="index--franja-clientes__container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, facere labore, repellat iure, ratione ea rerum sint reprehenderit impedit voluptatum nihil. Nesciunt obcaecati, ipsum labore dolor maxime ullam odio aut!</p>
+                <h4>Sofia morales</h4>
+                <h5>Propietaria de xx-empresa</h5>
+            </div>
+            <div class="sindex--franja-clientes__container" >
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias pariatur ipsa aspernatur, unde nostrum harum eaque quae quod cumque tempore autem magni quos magnam tempora assumenda sit nam. Facere.</p>
+                <h4>julian correa</h4>
+            <h5>Propietario de xx-empresa</h5>
+        </div>
+        <div class="index--franja-clientes__container">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad harum veritatis ipsum consequatur doloremque error molestias fugit necessitatibus repellendus, itaque labore odio temporibus facilis, fugiat vel culpa sequi officiis id.</p>
+            <h4>Mauricio Montoya</h4>
+            <h5>Propietario de xx-empresa</h5>
+        </div>
+        <div class="index--franja-clientes__container">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, facere labore, repellat iure, ratione ea rerum sint reprehenderit impedit voluptatum nihil. Nesciunt obcaecati, ipsum labore dolor maxime ullam odio aut!</p>
+            <h4>Martina niseque</h4>
+            <h5>Propietaria de xx-empresa</h5>
+        </div>
+    </div>
+        <img class="slider--index__arrow-clientes" src="./src/img/iconos/bx-right-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--next-clientes">
+    </div>
+    <div role="tablist" class="franja-clientes-body__indicadores"></div>
+    <div class="index-button-container">
+        <a id="index-button__reseña" class="index--button-nosotros" href="./pages/nosotros.html">Agregar reseña</a>
+    </div>
+</section>
 </main>
 
 <!-- ----------------------------------- fin del body ----------------------------------- -->
-   <script src="./js/slider.js"></script>
+
+<!-- ----------------------------------- footer -->
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <h3>+ <span>Melo</span> </h3>
+        <p class="footer-links">
+            <a href="">Inicio</a>
+            |
+            <a href="pages/nosotros.html">Nosotros</a>
+            |
+            <a href="pages/portafolio.html">Servicios</a>
+            |
+            <a href="">Contacto</a>
+        </p>
+        <p class="footer-company-name">Copyright 2022 <strong>+melo</strong> Todos los derechos reservados </p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p> <span>Medellín - Colombia</span> </p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p> +57 317 4012157</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#"> correo@gmail.com</a> </p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>+ melo</strong> is a agency
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/masmeloagency/"> <i class="fa fa-instagram"></i></a>
+            <a href=" https://api.whatsapp.com/send?phone=573174012157&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20Masmelo%20%F0%9F%98%8E"> <i class="fa fa-whatsapp"></i></a>
+           
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+<script src="./js/index.js"></script>
+<script type="module" src="./js/seMas.js"></script>
+<script src="./js/sliderBanner.js"></script>
+<script src="./js/sliderComments.js"></script>
+   
   </body>
 </html>
