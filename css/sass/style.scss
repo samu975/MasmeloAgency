@@ -10,6 +10,7 @@ $blanco:#ffffff;
 }
 body{
     background-color: #f2f2f2;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -273,6 +274,10 @@ a{
         }
     }
 }
+footer{
+    text-align: center;
+    margin: 40px;
+}
 
 // ------------------- servicios 
 
@@ -367,7 +372,6 @@ a{
         font-size: 7.5vw;
     }
 }
-
 
 
 /* -------------------------media queries ---------------------------------- */
@@ -500,6 +504,20 @@ a{
         h2{
             font-size: 2.5vh;
         }
+    }
+    .footer-distributed h3{
+        font-size: 2.5vw;
+    }
+    .footer-distributed .footer-left{
+        width: 30%;
+        
+    }
+    
+    .footer-distributed .footer-center{
+        width: 30%;
+    }
+    .footer-distributed .footer-right{
+        width: 30%;
     }
     
 }

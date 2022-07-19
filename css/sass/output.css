@@ -2,7 +2,8 @@
   color: #f5af23; }
 
 body {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -224,6 +225,10 @@ a {
     .index--franja-clientes .franja-clientes-body__container h5 {
       text-align: center; }
 
+footer {
+  text-align: center;
+  margin: 40px; }
+
 .index--servicios__container {
   padding-bottom: 50px; }
   .index--servicios__container h2 {
@@ -398,6 +403,18 @@ a {
     opacity: 1; }
 
   .franja h2 {
-    font-size: 2.5vh; } }
+    font-size: 2.5vh; }
+
+  .footer-distributed h3 {
+    font-size: 2.5vw; }
+
+  .footer-distributed .footer-left {
+    width: 30%; }
+
+  .footer-distributed .footer-center {
+    width: 30%; }
+
+  .footer-distributed .footer-right {
+    width: 30%; } }
 
 /*# sourceMappingURL=output.css.map */
