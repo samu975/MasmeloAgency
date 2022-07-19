@@ -1,0 +1,47 @@
+/* ------------------------------------ importaciones -----------------------------  */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+/* ------------------------------- fin importaciones ---------------------------- */
+
+/* --------------------------variables------------------------------ */
+:root{
+    --negro: rgb(33, 36, 41);
+    --blanco: #ffffff;
+    --naranja: rgb(245, 175, 35);
+    
+}
+/* ------------------------------- fin variables ---------------------------- */
+
+
+*{
+    margin:0;   
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px
+}
+/* --------------------------Header----------------------------- */
+
+.header{
+    background-color: black;
+    color: var(--blanco);
+    text-align: center;
+    padding: 1.5vh;
+}
+.header--contactanos{
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+
+.header--celular{
+    text-decoration: none;
+    font-size: 0.7rem;
+    color: var(--naranja);
+    letter-spacing: 2px;
+}
+
+.header--celular:hover{
+    color: var(--naranja);
+}
+/* --------------------------Fin header----------------------------- */
+/* -------------------------------------------------- Main -------------------------------------------------------  */
+
