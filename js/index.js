@@ -10,16 +10,12 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '-100px',
     });
-    sr.reveal('.slider--index', {
+    sr.reveal('.index--contenedor-text', {
         duration: 3000,
         origin: 'right',
         distance: '-100px',
     });
-    sr.reveal('.index--seMas', {
-        duration: 3000,
-        origin: 'left',
-        distance: '-100px',
-    });
+    
     sr.reveal('.if-you-are', {
         duration: 3000,
         origin: 'bottom',

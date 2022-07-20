@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
     <title>Masmelo Agency</title>
+
+    <!-- ---------------- css  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./css/sass/output.css">
-  
-    
 
-      <!--Iconos -->
-      <script src="https://kit.fontawesome.com/8ad2b1116a.js" crossorigin="anonymous"></script>
+    <!-- ---------------- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  
   </head>
   <body>
  <!-- ------------------------------------ Header -----------------------------------  -->
@@ -26,60 +27,39 @@
           >+Melo</a >
     </header>
   <!-- ------------------------------------ Nav -----------------------------------  -->
-    <nav class="menu-navegacion contenedor">
-            <ul class="navbar--enlaces__left" >
-                <li><a class="navbar--enlaces__text" href="#">Inicio</a></li>
-                <li><a class="navbar--enlaces__text" href="#">Nosotros</a></li>
-            </ul>
-            <ul class="navbar--enlaces__right">
-                <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
-                <li ><a class="navbar--enlaces__text" href="#">contacto</a></li>
-            </ul>
-
-        </ul>
-        <div class="navbar--logo__center">
-            <img src="src/img/logo.png" alt="">
-        </div>
-      </nav>
+    
 <!-- ------------------------------------ Fin del Header -----------------------------------  -->
 <!-- ------------------------------------ inicio del body--------------------- -->
 <main>
-    <section class="slider--index">
-        <div class="slider--index__container container--index" >
-            <img class="slider--index__arrow" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before">
-            <div class="slider--index__body slider--index__body__show" data-id="1">
-                <figure>
-                    <video autoplay loop muted class="slider--index__img" src="./src/videos/production ID_4359060.mp4" alt="" >
-                </figure>
+    <section class="banner">
+        <video class="back-video" loop muted autoplay>
+            <source  src="./src/videos/production ID_4359060.mp4" type="video/mp4" >
+        </video>
+            <nav class="menu-navegacion contenedor">
+                <ul class="navbar--enlaces__left" >
+                    <li><a class="navbar--enlaces__text" href="#">Inicio</a></li>
+                    <li><a class="navbar--enlaces__text" href="#">Nosotros</a></li>
+                </ul>
+                <ul class="navbar--enlaces__right">
+                    <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
+                    <li ><a class="navbar--enlaces__text" href="#">contacto</a></li>
+                </ul>
+    
+            </ul>
+            <div class="navbar--logo__center">
+                <img src="src/img/logo.png" alt="">
             </div>
-            <div class="slider--index__body" data-id="2">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/retrosupply-jLwVAUtLOAQ-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            <div class="slider--index__body" data-id="3">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            <div class="slider--index__body" data-id="4">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/daniele-franchi-GbAEJUJKJ88-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            
-                <img class="slider--index__arrow" src="./src/img/iconos/bx-right-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--next">
-            
-        </div>
+          </nav>
+
+            <section class="index--se-mas">
+                
+                <div class="index--contenedor-text">
+                    <h2 class="index--seMas__title">Haz que tu marca sea + <span class="typed"> </span></h2>
+                </div>
+        </section>
     </section>
 <!-- ----------------------------------- se más melo----------------------------- -->
-    <section class="index--seMas">
-        
-        <div class="index--contenedor-text">
-            <h2 class="index--seMas__title">Haz que tu marca sea + <span class="typed"> </span></h2>
-        </div>
-        
-    </section>
+    
 
 <!-- ----------------------------------- if you are ------------
 -->
@@ -121,7 +101,7 @@
                     <li class="index-servicios--list__element">Monitoreo de mensajes</li>
                     <li class="index-servicios--list__element">Recuperación de cuentas</li>
                 </ul>
-                <p href="#">Ver Más</´p>
+                <p href="#">Ver Más</p>
             </div>
         </a>
         <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img2.jpg)">
@@ -306,13 +286,13 @@
         </div>
     </div>
 </footer>
-<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- <script src="./js/scroll.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="./js/index.js"></script>
 <script type="module" src="./js/seMas.js"></script>
-<script src="./js/sliderBanner.js"></script>
 <script src="./js/sliderComments.js"></script>
-   
+
   </body>
 </html>

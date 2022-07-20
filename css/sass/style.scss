@@ -8,12 +8,12 @@ $blanco:#ffffff;
 .naranja{
     color: $naranja;
 }
-html{
+html, body {
     overflow-x: hidden;
-}
-body{
-    background-color: #f2f2f2; 
-}
+  }
+  body {
+    position: relative
+  }
 a{
     text-decoration: none;
 }
@@ -22,51 +22,14 @@ a{
     margin: 0 auto;
     overflow: hidden;
 }
-.slider--index{
-    z-index: 1;
-    background-color: #f2f2f2;
-    padding: 40px 0;
-    .slider--index__container{
-        display: grid;
-        grid-template-columns: 10% 80% 10%;
-        align-items: center;
-        .slider--index__body{
-            grid-column: 2/3;
-            grid-row: 1/2;
-            opacity: 0;
-            pointer-events: none;
-            width: 100%;
-            align-items: center;
-            transition: 1.5s;
-        }
-        .slider--index__body__show{
-            opacity: 1;
-            pointer-events: unset;
-        }
-        .slider--index__img{
-            width: 70vw;
-            height: 60vh;
-            object-fit: cover;
-            display: block;
-            margin: 0 auto;
-        }
-        .slider--index__arrow{
-            cursor: pointer;
-            width: 30%;
-            min-width: 2rem;
-        }
-        .slider--index__arrow:nth-child(1){
-            justify-self: end;
-        }
 
-    }
-}
+
 .menu-navegacion{
+    grid-row: 1/3;
     margin: 0;
     width: 100%;
     padding: 0;
     display: grid;
-    background-color: #f2f2f2;
     grid-template-rows: 1px;
     grid-template-columns: repeat(3, 1fr);
     ul{
@@ -128,13 +91,36 @@ a{
         border-bottom-right-radius: 2.5rem;
     }
 }
-// ---------------------- Se más section ------------------------------------
+
+// ------------- banner ---------
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    background: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    .back-video{
+        position: absolute;
+        height: 150%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+// ---------------------- Se más section 
+.index--se-mas{
+    grid-row: 4/7;
+}
+
 .index--contenedor-text{
     display: flex;
     justify-content: center;
     margin: 8vw 0;
     text-align: center;
     .index--seMas__title{
+        color: $blanco;
         font-size: 9vw;
     }
     .animacion--mas{
