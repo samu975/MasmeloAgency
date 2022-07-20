@@ -1,9 +1,11 @@
 .naranja {
   color: #f5af23; }
 
-body {
-  background-color: #f2f2f2;
+html {
   overflow-x: hidden; }
+
+body {
+  background-color: #f2f2f2; }
 
 a {
   text-decoration: none; }
@@ -143,7 +145,11 @@ a {
   text-align: center;
   color: #4B4A4A;
   font-weight: bold;
-  font-size: 15px; }
+  margin: 10px 0;
+  font-size: 7.3vw; }
+  .text-or span {
+    color: #f5af23;
+    font-size: 7.5vw; }
 
 .text-right-place {
   text-align: center;
@@ -233,13 +239,18 @@ footer {
   padding-bottom: 50px; }
   .index--servicios__container h2 {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 15px;
     text-align: center;
-    font-size: 7.5vh; }
+    font-size: 6.5vh; }
+  .index--servicios__container h3 {
+    text-align: center;
+    font-size: 6vw;
+    margin-bottom: 25px; }
 
 .index--servicios-card__container {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  flex-wrap: wrap; }
 
 .index--servicios__card {
   width: 200px;
@@ -249,16 +260,22 @@ footer {
   box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.37); }
 
 .index-servicios__content {
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.4); }
-  .index-servicios__content h3, .index-servicios__content p {
+  .index-servicios__content h3, .index-servicios__content p, .index-servicios__content ul {
+    padding: 0  10px;
     color: #f2f2f2;
-    text-decoration: none; }
+    text-decoration: none;
+    list-style: none; }
+  .index-servicios__content h3 {
+    font-size: 5vw; }
+  .index-servicios__content li {
+    font-size: 3vw; }
 
 .slider {
   height: 200px;
@@ -355,6 +372,11 @@ footer {
     align-items: center;
     flex-wrap: nowrap; }
 
+  .text-or {
+    font-size: 1.3vw; }
+    .text-or span {
+      font-size: 1.5vw; }
+
   .index--categorias-clientes__titulo {
     font-size: 2vw; }
 
@@ -395,11 +417,17 @@ footer {
     padding-bottom: 20px; }
 
   .index--servicios__container h2 {
-    font-size: 2.5vw; }
+    font-size: 2.2vw; }
+  .index--servicios__container h3 {
+    font-size: 1.8vw; }
 
   .index-servicios__content {
     opacity: 0;
     transition: .5s; }
+    .index-servicios__content h3 {
+      font-size: 20px; }
+    .index-servicios__content li {
+      font-size: 16px; }
 
   .index--servicios__card:hover .index-servicios__content {
     opacity: 1; }
@@ -417,6 +445,9 @@ footer {
     width: 30%; }
 
   .footer-distributed .footer-right {
-    width: 30%; } }
+    width: 30%; }
+
+  .footer-distributed .separador {
+    display: none; } }
 
 /*# sourceMappingURL=output.css.map */

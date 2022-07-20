@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./css/sass/output.css">
   
-    <script src="https://unpkg.com/scrollreveal"></script>
+    
 
       <!--Iconos -->
       <script src="https://kit.fontawesome.com/8ad2b1116a.js" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
             </ul>
             <ul class="navbar--enlaces__right">
                 <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
-                <li ><a class="navbar--enlaces__text" href="#">Contácto</a></li>
+                <li ><a class="navbar--enlaces__text" href="#">contacto</a></li>
             </ul>
 
         </ul>
@@ -49,7 +49,7 @@
             <img class="slider--index__arrow" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before">
             <div class="slider--index__body slider--index__body__show" data-id="1">
                 <figure>
-                    <img class="slider--index__img" src="./src/img/banner/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg" alt="" >
+                    <video autoplay loop muted class="slider--index__img" src="./src/videos/production ID_4359060.mp4" alt="" >
                 </figure>
             </div>
             <div class="slider--index__body" data-id="2">
@@ -87,47 +87,96 @@
     <div class="if-you-are">
         <h2 class="text-if-you">Si tú eres</h2>
         <ul>
-            <li class="list-if-you"> <img class="check-icon" src="src/img/iconos/check.svg" alt=""> side husder</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> emprendedor</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> coach</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Consultant</li>
+            <li class="list-if-you"> <img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un emprendedor</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un influencer</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un prestador de servicios</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un vendedor</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un empresario</li>
         </ul>
 
-        <p class="text-or">Or you just have a experience without a business yet</p>
-        <p class="text-right-place">Estás en el lugar correcto !</p>
+        <p class="text-or">Y quieres llevar tu marca <span>+ lejos</span></p>
+        <p class="text-right-place">Llegaste al lugar indicado.</p>
+        <p class="text-or">Somos una agencia de marketing y comunicaciones que crea estrategias personalizadas y las hace realidad para mejorar la expresión de las marcas.<br>Lo hacemos con un equipo de jóvenes que entiende el mercado, las tendencias y a ti.
+            </p>
         <div class="index-button-container">
-            <a class="index--button-nosotros" href="./pages/nosotros.html">Quienes somos</a>
+            <a class="index--button-nosotros" href="./pages/nosotros.html">Conócenos </a>
         </div>
     </div>
     
 </section>
 <!-- ------------------------------------ que te podemos ofrecer  -->
 <section class="index--servicios__container">
-    <h2 class="index--title-servicios">Qué te podemos ofrecer: </h2>
+    <h2 class="index--title-servicios">¿Con qué quieres comenzar? </h2>
+    <h3 class="index--subtitle-servicios">Aquí te ofrecemos: </h3>
     <!-- ---- cards  -->
     <div class="index--servicios-card__container">
 
         <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img1.jpg)">
             <div class="index-servicios__content">
-                <h3>Servicio 1</h3>
-                <p href="#">Ver Más</p>
+                <h3>Redes sociales: </h3>
+                <ul class="index-servicios--list">
+                    <li class="index-servicios--list__element">Creación de piezas</li>
+                    <li class="index-servicios--list__element">Copywriting</li>
+                    <li class="index-servicios--list__element">Montaje de piezas</li>
+                    <li class="index-servicios--list__element">Monitoreo de mensajes</li>
+                    <li class="index-servicios--list__element">Recuperación de cuentas</li>
+                </ul>
+                <p href="#">Ver Más</´p>
             </div>
         </a>
         <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img2.jpg)">
         <div class="index-servicios__content">
-            <h3>Servicio 2</h3>
+            <h3>Páginas web</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Diseño y rediseño</li>
+                <li class="index-servicios--list__element">SEO</li>
+                <li class="index-servicios--list__element">redacción de artículos para blog</li>
+            </ul>
             <p href="#">Ver Más</p>
         </div>
     </a>
     <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img3.jpg)">
         <div class="index-servicios__content">
-            <h3>Servicio 3</h3>
+            <h3>Pauta</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Pauta en Meta</li>
+                <li class="index-servicios--list__element">Pauta en Google SEM</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img2.jpg)">
+        <div class="index-servicios__content">
+            <h3>Multimedia</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Grabación y edición de video/ reels</li>
+                <li class="index-servicios--list__element">Servicio de fotografía</li>
+            </ul>
             <p href="#">Ver Más</p>
         </div>
     </a>
     <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img4.jpg)">
         <div class="index-servicios__content">
-            <h3>Servicio 4</h3>
+            <h3>Branding y estrategia</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Branding: logo, manual de marca, paleta de colores</li>
+                <li class="index-servicios--list__element">Investigación de mercado + plan de estrategia digital</li>
+                <li class="index-servicios--list__element">Asesorías de estrategia digital</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img3.jpg)">
+        <div class="index-servicios__content">
+            <h3>Publicidad impresa y exterior</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Diseño de volantes</li>
+                <li class="index-servicios--list__element">avisos</li>
+                <li class="index-servicios--list__element">QRs</li>
+                <li class="index-servicios--list__element">vallas</li>
+                <li class="index-servicios--list__element">recetarios</li>
+                <li class="index-servicios--list__element">menús</li>
+            </ul>
             <p href="#">Ver Más</p>
         </div>
     </a>
@@ -229,6 +278,7 @@
         </p>
         <p class="footer-company-name">Copyright 2022 <strong>+melo</strong> Todos los derechos reservados </p>
     </div>
+    <hr class="separador">
     <div class="footer-center">
         <div>
             <i class="fa fa-map-marker"></i>
@@ -243,6 +293,7 @@
             <p><a href="#"> correo@gmail.com</a> </p>
         </div>
     </div>
+    <hr class="separador">
     <div class="footer-right">
         <p class="footer-company-about">
             <span>About the company</span>
@@ -255,7 +306,7 @@
         </div>
     </div>
 </footer>
-
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="./js/index.js"></script>

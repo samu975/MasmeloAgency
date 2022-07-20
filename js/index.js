@@ -42,7 +42,7 @@ window.sr = ScrollReveal();
     });
     sr.reveal('.index--franja-clientes', {
         duration: 2000,
-        origin: 'right',
+        origin: 'bottom',
         distance: '200px',
     });
     sr.reveal('.index--servicios__container', {
