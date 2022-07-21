@@ -358,10 +358,19 @@ footer {
     align-items: center;
     flex-wrap: nowrap; }
 
+  .text-padding {
+    padding: 0 30%; }
+    .text-padding .text-or {
+      text-align: left; }
+
   .text-or {
-    font-size: 1.3vw; }
+    font-size: 1.3vw;
+    text-align: left; }
     .text-or span {
       font-size: 1.5vw; }
+
+  .index--contenedor-text {
+    padding: 0 30%; }
 
   .index--categorias-clientes__titulo {
     font-size: 2vw; }
@@ -426,6 +435,14 @@ footer {
 
   .footer-distributed .footer-left {
     width: 30%; }
+
+  .you-r-separador {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #4B4A4A;
+    height: 15px;
+    width: 100%; }
 
   .footer-distributed .footer-center {
     width: 30%; }
