@@ -54,6 +54,13 @@ window.sr = ScrollReveal();
         distance: '200px',
     });
     
+    // Formulario 
+
+    sr.reveal('.container-form', {
+        duration: 8000,
+        origin: 'bottom',
+        distance: '300px'
+    })
     
     
 
