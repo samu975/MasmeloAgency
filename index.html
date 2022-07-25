@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./src/img/logo.png" type="image/x-icon">
     <title>Masmelo Agency</title>
+
+    <!-- ---------------- css  -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
     <link rel="stylesheet" href="./css/sass/output.css">
-  
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="../css/normalize.css">
 
-      <!--Iconos -->
-      <script src="https://kit.fontawesome.com/8ad2b1116a.js" crossorigin="anonymous"></script>
+    <!-- ---------------- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+  
   </head>
   <body>
  <!-- ------------------------------------ Header -----------------------------------  -->
     <header class="header">
 
-        <span class="header--contactanos">De estandar a </span>
+        <span class="header--contactanos">De estándar a </span>
         <a
           class="header--celular"
           href="https://api.whatsapp.com/send?phone=573174012157&text=%C2%A1Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20los%20servicios%20de%20Masmelo%20%F0%9F%98%8E"
@@ -26,60 +28,39 @@
           >+Melo</a >
     </header>
   <!-- ------------------------------------ Nav -----------------------------------  -->
-    <nav class="menu-navegacion contenedor">
-            <ul class="navbar--enlaces__left" >
-                <li><a class="navbar--enlaces__text" href="#">Inicio</a></li>
-                <li><a class="navbar--enlaces__text" href="#">Nostros</a></li>
-            </ul>
-            <ul class="navbar--enlaces__right">
-                <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
-                <li ><a class="navbar--enlaces__text" href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-
-        </ul>
-        <div class="navbar--logo__center">
-            <img src="src/img/logo.png" alt="">
-        </div>
-      </nav>
+    
 <!-- ------------------------------------ Fin del Header -----------------------------------  -->
 <!-- ------------------------------------ inicio del body--------------------- -->
 <main>
-    <section class="slider--index">
-        <div class="slider--index__container container--index" >
-            <img class="slider--index__arrow" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before">
-            <div class="slider--index__body slider--index__body__show" data-id="1">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg" alt="" >
-                </figure>
+    <section class="banner">
+        <video class="back-video" loop muted autoplay>
+            <source  src="./src/videos/video-pag-principal.mp4" type="video/mp4" >
+        </video>
+            <nav class="menu-navegacion contenedor">
+                <ul class="navbar--enlaces__left" >
+                    <li><a class="navbar--enlaces__text" href="#">Inicio</a></li>
+                    <li><a class="navbar--enlaces__text" href="./pages/nosotros.html">Nosotros</a></li>
+                </ul>
+                <ul class="navbar--enlaces__right">
+                    <li class="" ><a class="navbar--enlaces__text" href="#">Servicios</a></li>
+                    <li ><a class="navbar--enlaces__text" href="./pages/contacto.html">contacto</a></li>
+                </ul>
+    
+            </ul>
+            <div class="navbar--logo__center">
+                <img src="src/img/logo.png" alt="">
             </div>
-            <div class="slider--index__body" data-id="2">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/retrosupply-jLwVAUtLOAQ-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            <div class="slider--index__body" data-id="3">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/towfiqu-barbhuiya-5xTYgw2g7aw-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            <div class="slider--index__body" data-id="4">
-                <figure>
-                    <img class="slider--index__img" src="./src/img/banner/daniele-franchi-GbAEJUJKJ88-unsplash.jpg" alt="" >
-                </figure>
-            </div>
-            
-                <img class="slider--index__arrow" src="./src/img/iconos/bx-right-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--next">
-            
-        </div>
+          </nav>
+
+            <section class="index--se-mas">
+                
+                <div class="index--contenedor-text">
+                    <h2 class="index--seMas__title">Haz que tu marca sea + <span class="typed"> </span></h2>
+                </div>
+        </section>
     </section>
 <!-- ----------------------------------- se más melo----------------------------- -->
-    <section class="index--seMas">
-        
-        <div class="index--contenedor-text">
-            <h2 class="index--seMas__title">Haz que tu marca sea + <span class="typed"> </span></h2>
-        </div>
-        
-    </section>
+    
 
 <!-- ----------------------------------- if you are ------------
 -->
@@ -87,20 +68,108 @@
     <div class="if-you-are">
         <h2 class="text-if-you">Si tú eres</h2>
         <ul>
-            <li class="list-if-you"> <img class="check-icon" src="src/img/iconos/check.svg" alt=""> side husder</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> emprendedor</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> coach</li>
-            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Consultant</li>
+            <li class="list-if-you"> <img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un emprendedor</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un influencer</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un prestador de servicios</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un vendedor</li>
+            <li class="list-if-you"><img class="check-icon" src="src/img/iconos/check.svg" alt=""> Un empresario</li>
         </ul>
 
-        <p class="text-or">Or you just have a experience without a business yet</p>
-        <p class="text-right-place">Estás en el lugar correcto !</p>
+        <p class="text-or">Y quieres llevar tu marca <span>+ lejos</span></p>
+        <p class="text-right-place">Llegaste al lugar indicado.</p>
+        <hr class="you-r-separador">
+        
+        <div class="text-padding">
+            <p class="text-or">Somos una agencia de marketing y comunicaciones que crea estrategias personalizadas y las hace realidad para mejorar la expresión de las marcas.<br>Lo hacemos con un equipo de jóvenes que entiende el mercado, las tendencias y a ti.
+        </div>
+            </p>
         <div class="index-button-container">
-            <a class="index--button-nosotros" href="./pages/nosotros.html">Quienes somos</a>
+            <a class="index--button-nosotros" href="./pages/nosotros.html">Conócenos </a>
         </div>
     </div>
     
 </section>
+<!-- ------------------------------------ que te podemos ofrecer  -->
+<section class="index--servicios__container">
+    <h2 class="index--title-servicios">¿Con qué quieres comenzar? </h2>
+    <h3 class="index--subtitle-servicios">Aquí te ofrecemos: </h3>
+    <!-- ---- cards  -->
+    <div class="index--servicios-card__container">
+
+        <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img1.jpg)">
+            <div class="index-servicios__content">
+                <h3>Redes sociales: </h3>
+                <ul class="index-servicios--list">
+                    <li class="index-servicios--list__element">Creación de piezas</li>
+                    <li class="index-servicios--list__element">Copywriting</li>
+                    <li class="index-servicios--list__element">Montaje de piezas</li>
+                    <li class="index-servicios--list__element">Monitoreo de mensajes</li>
+                    <li class="index-servicios--list__element">Recuperación de cuentas</li>
+                </ul>
+                <p href="#">Ver Más</p>
+            </div>
+        </a>
+        <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img2.jpg)">
+        <div class="index-servicios__content">
+            <h3>Páginas web</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Diseño y rediseño</li>
+                <li class="index-servicios--list__element">SEO</li>
+                <li class="index-servicios--list__element">redacción de artículos para blog</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img3.jpg)">
+        <div class="index-servicios__content">
+            <h3>Pauta</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Pauta en Meta</li>
+                <li class="index-servicios--list__element">Pauta en Google SEM</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img2.jpg)">
+        <div class="index-servicios__content">
+            <h3>Multimedia</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Grabación y edición de video/ reels</li>
+                <li class="index-servicios--list__element">Servicio de fotografía</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img4.jpg)">
+        <div class="index-servicios__content">
+            <h3>Branding y estrategia</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Branding: logo, manual de marca, paleta de colores</li>
+                <li class="index-servicios--list__element">Investigación de mercado + plan de estrategia digital</li>
+                <li class="index-servicios--list__element">Asesorías de estrategia digital</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+    <a href="./pages/servicios.html" class=" index--servicios__card" style="--i:url(/src/img/imagenes-genericas/img3.jpg)">
+        <div class="index-servicios__content">
+            <h3>Publicidad impresa y exterior</h3>
+            <ul class="index-servicios--list">
+                <li class="index-servicios--list__element">Diseño de volantes</li>
+                <li class="index-servicios--list__element">avisos</li>
+                <li class="index-servicios--list__element">QRs</li>
+                <li class="index-servicios--list__element">vallas</li>
+                <li class="index-servicios--list__element">recetarios</li>
+                <li class="index-servicios--list__element">menús</li>
+            </ul>
+            <p href="#">Ver Más</p>
+        </div>
+    </a>
+</div>
+        
+    </div>
+</section>
+
 <!-- -----------------------------------categoria clientes -->
 <section class="index--categorias-clientes">
     <h2 class="index--categorias-clientes__titulo">Chismoseá lo que hemos hecho y con quienes hemos trabajado </h2>
@@ -114,8 +183,35 @@
     </div>
 </section>
 <!-- ----------------------------------- franja clientes -->
+
+<section class="franja">
+    <h2 class="title-clientes">Nuestros clientes</h2>
+   <div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+        <div class="slide">
+            <img src="src/img/logo.png" alt="">
+        </div>
+    </div>
+   </div>
+</section>
+
 <section class="index--franja-clientes">
-    <h2>Qué dicen nuestro clientes: </h2>
+    <h2>Así es la experiencia <span class="naranja">+melo:</span></h2>
     <div class="franja-clientes-body__container">
         <img class="slider--index__arrow-clientes" src="./src/img/iconos/bx-left-arrow-alt.svg" alt="flecha para mover el slider" id="arrow--before-clientes">
         <div class="slider--index__caarrousel-container">
@@ -125,7 +221,7 @@
                 <h4>Sofia morales</h4>
                 <h5>Propietaria de xx-empresa</h5>
             </div>
-            <div class="sindex--franja-clientes__container" >
+            <div class="index--franja-clientes__container" >
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt molestias pariatur ipsa aspernatur, unde nostrum harum eaque quae quod cumque tempore autem magni quos magnam tempora assumenda sit nam. Facere.</p>
                 <h4>julian correa</h4>
             <h5>Propietario de xx-empresa</h5>
@@ -167,6 +263,7 @@
         </p>
         <p class="footer-company-name">Copyright 2022 <strong>+melo</strong> Todos los derechos reservados </p>
     </div>
+    <hr class="separador">
     <div class="footer-center">
         <div>
             <i class="fa fa-map-marker"></i>
@@ -181,10 +278,11 @@
             <p><a href="#"> correo@gmail.com</a> </p>
         </div>
     </div>
+    <hr class="separador">
     <div class="footer-right">
         <p class="footer-company-about">
             <span>About the company</span>
-            <strong>+ melo</strong> is a agency
+            <strong>+ melo</strong> agency
         </p>
         <div class="footer-icons">
             <a href="https://www.instagram.com/masmeloagency/"> <i class="fa fa-instagram"></i></a>
@@ -194,12 +292,13 @@
     </div>
 </footer>
 
+
+<!-- <script src="./js/scroll.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 <script src="./js/index.js"></script>
 <script type="module" src="./js/seMas.js"></script>
-<script src="./js/sliderBanner.js"></script>
 <script src="./js/sliderComments.js"></script>
-   
+
   </body>
 </html>

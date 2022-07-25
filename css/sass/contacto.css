@@ -1,0 +1,82 @@
+html {
+  background-color: #efe9e7; }
+
+.menu-navegacion {
+  margin-bottom: 30px; }
+
+.contact--titlePrincipal {
+  margin: 15px auto 30px 0;
+  text-align: center; }
+
+input {
+  width: 100%; }
+  input::placeholder {
+    font-size: 12px; }
+
+textarea::placeholder {
+  font-size: 12px; }
+
+.contact--buttons {
+  margin-top: 30px;
+  background-color: #b4d46a;
+  padding: 15px;
+  gap: 15px; }
+
+.contact-buttons__phone-icon {
+  width: 30px; }
+
+.contact-buttons__phone-text {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+  color: black; }
+
+.contact-buttons__phone-button {
+  border: 1px solid #673ab7;
+  border-radius: 10px;
+  background-color: #673ab7;
+  margin-top: 10px;
+  padding: 10px 8px;
+  font-size: 14px;
+  color: white; }
+
+.contact-buttons__phone-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px 0; }
+
+.contact-buttons__social-icon {
+  width: 50px; }
+
+@media (min-width: 768px) {
+  .contact--titlePrincipal {
+    font-size: 1.2rem; }
+
+  .contact--buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+
+  hr {
+    display: none; }
+
+  .contact-buttons__phone-text {
+    font-size: 1.2rem; }
+
+  .contact-buttons__social-icon {
+    width: 70px; }
+
+  .contact-buttons__phone-icon {
+    width: 40px; }
+
+  input::placeholder {
+    font-size: 1.2rem; }
+
+  textarea::placeholder {
+    font-size: 1.2rem; }
+
+  .btn-form {
+    font-size: 1.2rem; } }
+
+/*# sourceMappingURL=contacto.css.map */
