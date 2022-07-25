@@ -53,7 +53,14 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '200px',
     });
-    
+    // ----------------- contacto 
+    sr.reveal('.contact--titlePrincipal', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+    });
+
+    sr.destroy();
     
     
 
