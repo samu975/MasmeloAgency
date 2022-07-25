@@ -90,14 +90,14 @@ a {
 
 .index--contenedor-text {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   margin: 8vw 0;
   text-align: center; }
   .index--contenedor-text .index--seMas__title {
     color: #ffffff;
-    font-size: 9vw; }
+    font-size: 12vw; }
   .index--contenedor-text .animacion--mas {
-    font-size: 9vw;
+    font-size: 12vw;
     font-weight: bold;
     color: #f5af23; }
   .index--contenedor-text .typed-cursor {
@@ -310,6 +310,31 @@ footer {
     text-align: center;
     font-size: 7.5vw; }
 
+.global--aside-buttons {
+  position: fixed;
+  width: 70px;
+  height: 50px;
+  line-height: 55px;
+  bottom: 50%;
+  right: 0; }
+  .global--aside-buttons ul {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    border: 1px solid #673ab7;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 50%;
+    margin: 35px;
+    background-color: #673ab7;
+    padding: 2px 10px; }
+    .global--aside-buttons ul li {
+      list-style: none;
+      width: 130%; }
+      .global--aside-buttons ul li img {
+        width: 130%;
+        padding-right: 2px; }
+
 /* -------------------------media queries ---------------------------------- */
 @media (min-width: 768px) {
   .header--contactanos {
@@ -342,11 +367,12 @@ footer {
 
   .index--contenedor-text {
     margin-top: 15px;
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    padding: 0; }
     .index--contenedor-text .index--seMas__title {
-      font-size: 3vw; }
+      font-size: 5vw; }
     .index--contenedor-text .animacion--mas {
-      font-size: 3vw;
+      font-size: 5vw;
       font-weight: bold;
       color: #f5af23; }
     .index--contenedor-text .typed-cursor {
@@ -370,7 +396,8 @@ footer {
       font-size: 1.5vw; }
 
   .index--contenedor-text {
-    padding: 0 30%; }
+    padding: 0 0 0 10%;
+    text-align: left; }
 
   .index--categorias-clientes__titulo {
     font-size: 2vw; }
@@ -451,6 +478,22 @@ footer {
     width: 30%; }
 
   .footer-distributed .separador {
-    display: none; } }
+    display: none; }
+
+  .global--aside-buttons {
+    position: fixed;
+    width: 100px;
+    height: 110px;
+    right: -0.8%; }
+    .global--aside-buttons ul {
+      width: 50%;
+      margin: 35px; }
+      .global--aside-buttons ul li {
+        list-style: none;
+        width: 130%; }
+        .global--aside-buttons ul li img {
+          margin-top: 15PX;
+          width: 110%;
+          padding-right: 2px; } }
 
 /*# sourceMappingURL=output.css.map */

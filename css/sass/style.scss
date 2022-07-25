@@ -113,15 +113,15 @@ a{
 
 .index--contenedor-text{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 8vw 0;
     text-align: center;
     .index--seMas__title{
         color: $blanco;
-        font-size: 9vw;
+        font-size: 12vw;
     }
     .animacion--mas{
-        font-size: 9vw;
+        font-size: 12vw;
         font-weight: bold;
         color: $naranja;
     }
@@ -379,6 +379,36 @@ footer{
     }
 }
 
+// --------- aside buttons 
+.global--aside-buttons{
+    position: fixed;
+    width: 70px;
+    height: 50px;
+    line-height: 55px;
+    bottom: 50%;
+    right: 0;
+    ul{
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        border: 1px solid #673ab7;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        width: 50%;
+        margin: 35px;
+        background-color: #673ab7;
+        padding: 2px 10px;
+        li{
+            list-style: none;
+            width: 130%;
+            img{
+                width: 130%;
+                padding-right: 2px;
+            }
+        }
+    }
+}
+
 
 /* -------------------------media queries ---------------------------------- */
 
@@ -420,11 +450,12 @@ footer{
     .index--contenedor-text{
         margin-top: 15px;
         margin-bottom: 50px;
+        padding: 0;
         .index--seMas__title{
-            font-size: 3vw;
+            font-size: 5vw;
         }
         .animacion--mas{
-            font-size: 3vw;
+            font-size: 5vw;
             font-weight: bold;
             color: $naranja;
         }
@@ -452,7 +483,8 @@ footer{
         }
     }
     .index--contenedor-text{
-        padding: 0 30%;
+        padding: 0 0 0 10%;
+        text-align: left;
     }
     .index--categorias-clientes__titulo{
         font-size: 2vw;
@@ -564,4 +596,25 @@ footer{
             display: none;
         }
     }
+
+    .global--aside-buttons{
+        position: fixed;
+        width: 100px;
+        height: 110px;
+        right: -0.8%;
+        ul{
+            width: 50%;
+            margin: 35px;
+            li{
+                list-style: none;
+                width: 130%;
+                img{
+                    margin-top: 15PX;
+                    width: 110%;
+                    padding-right: 2px;
+                }
+            }
+        }
+    }
+    
 }
