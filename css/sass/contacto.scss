@@ -1,5 +1,13 @@
 html {
-    background-color: #efe9e7;
+    background-color: #482880;
+}
+
+main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../../src/img/carta-mobile.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .menu-navegacion{
@@ -7,14 +15,21 @@ html {
 }
 .contact--titlePrincipal{
     margin: 15px auto 30px 0;
+    padding: 0  30px;
     text-align: center;
+    
+}
+
+.form-right{
+    width: 230px;
+    padding: 0;
 }
 
 input{
     width: 100%;
-
     &::placeholder{
         font-size: 12px;
+        border: none;
     }
 }
 
@@ -27,7 +42,7 @@ textarea{
 
 .contact--buttons{
     margin-top: 30px;
-    background-color: #b4d46a;
+    background-color: #482880;
     padding: 15px;
     gap: 15px;
 }
@@ -41,13 +56,17 @@ textarea{
     color: black;
 }
 .contact-buttons__phone-button{
-    border: 1px solid #673ab7;
+    border: 1px solid #c001ff;
     border-radius: 10px;
-    background-color: #673ab7;
+    background-color: #c001ff;
     margin-top: 10px;
-    padding: 10px 8px ;
-    font-size: 14px;
+    padding: 10px 30px ;
+    font-size: 18px;
     color: white;
+    &:hover{
+        border: 1px solid hsl(285, 92%, 33%);
+        background-color: hsl(285, 92%, 33%);
+    }
 }
 .contact-buttons__phone-container{
     display: flex;
@@ -64,8 +83,18 @@ textarea{
 
 @media (min-width: 768px)  {
     .contact--titlePrincipal{
-        font-size: 1.2rem;
+        font-size: 1.8rem;
         
+    }
+    main{
+        padding-top: 150px;
+        padding-bottom: 150px;
+        background-image: url(../../src/img/carta.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .form-right{
+        width: 500px;
     }
     .contact--buttons{
         display: grid;
@@ -74,15 +103,37 @@ textarea{
     hr{
         display: none;
     }
+    .contact--butons__title{
+       text-align: center;
+        font-size: 2rem;
+        color: white;
+        width: 100%;
+        background-color: #482880;
+    }
 
     .contact-buttons__phone-text{
         font-size: 1.2rem;
+        color: white;
     }
     .contact-buttons__social-icon{
         width: 70px;
+        height: 70px;
     }
     .contact-buttons__phone-icon{
         width: 40px;
+        height: 70px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 20px;
+    }
+    label{
+        text-align: left;
+        font-size: 20px;
+        padding-right: 10px;
+        padding-bottom: 10px;
     }
     input{    
         &::placeholder{
@@ -96,6 +147,9 @@ textarea{
         }
     }
     .btn-form{
+        background: transparent;
+        border: 1px solid black;
+        color: black;
         font-size: 1.2rem;
     }
 }
