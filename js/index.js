@@ -59,8 +59,38 @@ window.sr = ScrollReveal();
         origin: 'left',
         distance: '200px',
     });
+    sr.reveal('#check-icon1', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+        
+    });
+    sr.reveal('#check-icon2', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+        delay: 1000,
+    });
+    sr.reveal('#check-icon3', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+        delay: 2000
+    });
+    sr.reveal('#check-icon4', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+        delay: 3000
+    });
+    sr.reveal('#check-icon5', {
+        duration: 3000,
+        origin: 'left',
+        distance: '200px',
+        delay: 4000
+    });
 
-    sr.destroy();
+
     
     
 
