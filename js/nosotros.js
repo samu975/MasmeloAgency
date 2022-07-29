@@ -30,3 +30,9 @@ window.sr = ScrollReveal();
         origin: 'right',
         distance: '100px'
     })
+
+    sr.reveal('.quienes_somos--description', {
+        duration: 3000,
+        origin: 'right',
+        distance: '100px'
+    })

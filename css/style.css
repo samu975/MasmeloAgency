@@ -261,3 +261,25 @@ body{
         margin: 20px;
     }
 }
+
+.quienes_somos--descripcion__title{
+    font-size: 40px;
+    text-align: center;
+}
+
+.quienes_somos--description {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: #FFF;
+}
+.quienes_somos--description .quienes_somos--description__container {
+    margin-bottom: 50px; 
+}
+.quienes_somos--description .quienes_somos--description__container .quienes_somos--description__text {
+    font-size: 35px;
+    text-align: center; 
+}
