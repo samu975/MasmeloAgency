@@ -153,11 +153,44 @@ a {
 .nosotros--diferenciador__container {
   background-color: #ffffff;
   font-size: 7.5vw;
-  padding: 4%;
-  text-align: center;
-  color: black; }
-  .nosotros--diferenciador__container .nosotros--diferenciador__title {
-    padding-bottom: 15px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .nosotros--diferenciador__container .nostros--diferenciador__icon-container {
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap; }
+    .nosotros--diferenciador__container .nostros--diferenciador__icon-container .nosotros-diferenciador__icon {
+      display: flex;
+      margin-top: 15px;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      width: 100%; }
+      .nosotros--diferenciador__container .nostros--diferenciador__icon-container .nosotros-diferenciador__icon img {
+        width: 50px;
+        height: 50px; }
+      .nosotros--diferenciador__container .nostros--diferenciador__icon-container .nosotros-diferenciador__icon p {
+        text-align: center; }
+  @media screen and (min-width: 768px) {
+    .nosotros--diferenciador__container {
+      width: 100%;
+      padding-top: 15px; }
+      .nosotros--diferenciador__container .nostros--diferenciador__icon-container {
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between; }
+        .nosotros--diferenciador__container .nostros--diferenciador__icon-container .nosotros-diferenciador__icon {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center; }
+          .nosotros--diferenciador__container .nostros--diferenciador__icon-container .nosotros-diferenciador__icon img {
+            margin-bottom: 15px; } }
+
+#reloj-icon {
+  margin-left: -20px; }
 
 .nosotros--clientes-data__text {
   box-sizing: border-box;
