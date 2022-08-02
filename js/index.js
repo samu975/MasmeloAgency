@@ -90,7 +90,6 @@ window.sr = ScrollReveal();
         delay: 4000
     });
 
-
     
     
 

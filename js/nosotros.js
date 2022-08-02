@@ -36,3 +36,4 @@ window.sr = ScrollReveal();
         origin: 'right',
         distance: '100px'
     })
+    sr.destroy()
