@@ -44,7 +44,7 @@ window.sr = ScrollReveal();
     // reseñas
     sr.reveal('.index--franja-clientes', {
         duration: 2000,
-        origin: 'bottom',
+        origin: 'right',
         distance: '200px',
     });
     // servicios
