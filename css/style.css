@@ -4,7 +4,7 @@
 
 /* --------------------------variables------------------------------ */
 :root{
-    --negro: rgb(33, 36, 41);
+    --negro: #2d2a30;
     --blanco: #ffffff;
     --naranja: rgb(245, 175, 35);
     
@@ -17,7 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px
+
 }
 /* --------------------------Header----------------------------- */
 body{
@@ -307,8 +307,9 @@ body{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #D88B03;
-    color: #FFF;
+    background-color: rgb(255, 212, 178);
+    color: var(--negro);
+    
 }
 .servicios--description .servicios--description__container {
     margin-bottom: 30px; 
@@ -319,10 +320,10 @@ body{
 }
 
 .contacto-servicio-boton{
-    background-color: #8D5F46;
+    background-color: var(--naranja);
     padding: 10px;
     border-radius: 5px;
-    border: solid 1px #8D5F46;
+    border: solid 1px var(--naranja);
 }
 
 .link-boton-contacto-servicio{
