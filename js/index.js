@@ -92,5 +92,3 @@ window.sr = ScrollReveal();
 
     
     
-
-    
